@@ -6,10 +6,10 @@ BEGIN
 DECLARE num,fact INT;
 SET num=n;
 SET fact=1;
-label:while(num>0)do
+while(num>0)do
 set fact=num*fact;
 set num=num-1;
-end while label;
+end while;
 select concat('fact=',fact);
 END//
 DELIMITER ;
